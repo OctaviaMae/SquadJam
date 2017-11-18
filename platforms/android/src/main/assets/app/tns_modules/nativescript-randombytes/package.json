@@ -1,0 +1,58 @@
+{
+  "_from": "nativescript-randombytes@1.0.0",
+  "_id": "nativescript-randombytes@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-6IVUtBzF5lTWHp5ppTQZnErMbY8=",
+  "_location": "/nativescript-randombytes",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "nativescript-randombytes@1.0.0",
+    "name": "nativescript-randombytes",
+    "escapedName": "nativescript-randombytes",
+    "rawSpec": "1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0"
+  },
+  "_requiredBy": [
+    "/nativescript-nodeify"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-randombytes/-/nativescript-randombytes-1.0.0.tgz",
+  "_shasum": "e88554b41cc5e654d61e9e69a534199c4acc6d8f",
+  "_spec": "nativescript-randombytes@1.0.0",
+  "_where": "C:\\Android\\Groceries\\node_modules\\nativescript-nodeify",
+  "author": {
+    "name": "Eddy Verbruggen",
+    "email": "eddyverbruggen@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/EddyVerbruggen/nativescript-randombytes/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "NativeScript polyfill for Node randombytes",
+  "homepage": "https://github.com/EddyVerbruggen/nativescript-randombytes#readme",
+  "keywords": [
+    "ecosystem:nativescript",
+    "NativeScript",
+    "Node",
+    "Android",
+    "iOS",
+    "randombytes"
+  ],
+  "license": "MIT",
+  "main": "randombytes-native",
+  "name": "nativescript-randombytes",
+  "nativescript": {
+    "platforms": {
+      "android": "2.3.0",
+      "ios": "2.3.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EddyVerbruggen/nativescript-randombytes.git"
+  },
+  "version": "1.0.0"
+}

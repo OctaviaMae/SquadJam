@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="classes4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/platforms/android/build/intermediates/exploded-aar/widgets-release/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

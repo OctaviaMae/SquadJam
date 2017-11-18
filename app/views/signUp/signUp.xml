@@ -1,0 +1,24 @@
+<Page loaded="loaded" >
+
+    <ActionBar  class="action-bar">
+        <ActionBar.titleView>
+            <Label id= "create" text = "Create a Profile"/>
+            <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" tap="onNavBtnTap"/>
+
+            <!--<NavigationButton id = "addButton" android.systemIcon="ic_menu_add" tap="add"/>-->
+        </ActionBar.titleView>
+    </ActionBar>
+
+    <StackLayout orientation="vertical">
+        <Label id="create" text = "Create a username and password" hoizontalAllignment= "center" fontAttributes="bold" />
+
+    	<!--<Image src="http://clipart-library.com/img1/967879.png"  horizontalAlignment="center" />-->
+
+        <TextField id="email" text="{{ email }}" hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
+		<TextField secure="true" text="{{ password }}" hint="Password" />
+
+        <Button id="signIn" text="Sign in" tap="signIn" />
+        <Button id ="signUp" text="Sign up" class="link" tap="register" />
+
+    </StackLayout>
+</Page>

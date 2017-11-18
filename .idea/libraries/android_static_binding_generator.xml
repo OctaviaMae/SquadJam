@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="android-static-binding-generator">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/platforms/android/build-tools/android-static-binding-generator/staticbindinggenerator.jar!/" />
+      <root url="jar://$PROJECT_DIR$/platforms/android/build-tools/android-static-binding-generator/interfacenamegenerator.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

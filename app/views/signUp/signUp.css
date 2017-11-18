@@ -1,0 +1,42 @@
+@import url('~/platform.css');
+
+Page {
+    font-size: 17;
+}
+
+ActionBar{
+
+color : CadetBlue;
+background-color: #395e60;
+}
+
+
+
+#signIn {
+
+    margin-top: 30px;
+    width: 70%;
+    background-color: CadetBlue;
+    border-radius: 20px;
+
+}
+
+#signUp{
+    margin-top: 30px;
+    width: 70%;
+    background-color: CadetBlue;
+    border-radius: 20px;
+
+}
+
+#email{
+
+margin-top : 30%;
+}
+
+#create{
+
+ margin-top: 100px;
+ width: 75%;
+ size : 15%
+}

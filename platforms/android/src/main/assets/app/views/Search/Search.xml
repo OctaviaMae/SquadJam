@@ -1,0 +1,33 @@
+<Page navigatingTo="onNavigatingTo" xlmns="https://www.nativescript.org/tns.xsd" loaded ="loaded">
+
+    <ActionBar  class="action-bar">
+        <ActionBar.titleView>
+          <Label id= "title" text = "Search Songs"/>
+              <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" tap="onNavBtnTap"/>
+
+              <!--<NavigationButton id = "addButton" android.systemIcon="ic_menu_add" tap="add"/>-->
+        </ActionBar.titleView>
+    </ActionBar>
+
+    <StackLayout class="p-20">
+    <SearchBar id="searchBar" hint="Search" text="Search" clear="onClear" submit="onSubmit" />
+
+      <ListView id ="searchResults"> <!--items="{{ songList }}">-->
+        <ListView.itemTemplate>
+            <Label id="searchList"></Label>
+        </ListView.itemTemplate>
+      </ListView>
+    </StackLayout>
+
+<!--
+       <ListView id="Songs" items="{{ entries }}">
+        <ListView.itemTemplate>
+            <StackLayout orientation ="horizontal" >
+               <Label text="{{ img }}" textWrap="true" class="title" />
+                <Label text="{{ name }}" textWrap="true" class="title" />
+                <Label id ="artist" text="{{ artist }}" textWrap="true" class="title"/>
+                <Label id= "title" text="{{ title }}" textWrap="true" class="title" />
+            </StackLayout>
+        </ListView.itemTemplate>
+    </ListView>-->
+</Page>

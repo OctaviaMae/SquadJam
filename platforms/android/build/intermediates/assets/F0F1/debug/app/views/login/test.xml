@@ -1,0 +1,17 @@
+<Page xmlns:lv="nativescript-pro-ui/listview">
+
+<ActionBar title="RadListView Demo" class="action-bar" />
+
+    <lv:RadListView id="listview" class="list-group">
+        <lv:RadListView.listViewLayout>
+            <lv:ListViewLinearLayout scrollDirection="Vertical"/>
+        </lv:RadListView.listViewLayout>
+        <lv:RadListView.itemTemplate>
+            <StackLayout class="list-group-item">
+                <Label text="{{ itemName }}" class="list-group-item-heading" />
+                <Label text="{{ itemDesc }}" textWrap="true" class="list-group-item-text" />
+            </StackLayout>
+        </lv:RadListView.itemTemplate>
+    </lv:RadListView>
+
+</Page>

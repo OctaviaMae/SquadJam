@@ -1,0 +1,26 @@
+<Page navigatingTo="onNavigatingTo" xlmns="https://www.nativescript.org/tns.xsd" loaded="loaded">
+
+    <ActionBar  class="action-bar">
+        <ActionBar.titleView>
+            <Label id= "title" text = "Join"/>
+            <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" tap="onNavBtnTap"/>
+
+            <!--<NavigationButton id = "addButton" android.systemIcon="ic_menu_add" tap="add"/>-->
+        </ActionBar.titleView>
+    </ActionBar>
+
+
+    <StackLayout orientation="vertical" id="swipable">
+        <!--<TextField hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
+        <TextField hint="Password" secure="true" />
+
+        <image src ="http://clipart-library.com/img1/967879.png" horizontalAlignment="center" style= "width: 50%; height: 50%" ></image>
+        -->
+        <Label id = "groupName" text= "Type in 4-Letter Passcode" hoizontalAllignment= "center" fontAttributes="Bold" forntAttribute ="Italic"></Label>
+        <TextField id=" Password" hint = "4 letter password"  autocapitalizationType="none"></TextField>
+        <Button id= "join" text="Join Group " class="link" tap="joinGroup"/>
+
+    </StackLayout>
+
+    <!--<ActionBar class="action-bar on bottom" title="Join"></ActionBar>-->
+</Page>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/platforms/android/build/intermediates/exploded-aar/com.android.support/transition/26.0.0-alpha1/26.0.0-alpha1.iml" filepath="$PROJECT_DIR$/platforms/android/build/intermediates/exploded-aar/com.android.support/transition/26.0.0-alpha1/26.0.0-alpha1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/App_Resources/Android/Android.iml" filepath="$PROJECT_DIR$/app/App_Resources/Android/Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platforms/android/build/generated/source/buildConfig/F0/F0.iml" filepath="$PROJECT_DIR$/platforms/android/build/generated/source/buildConfig/F0/F0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platforms/android/build/generated/source/r/F0/F01.iml" filepath="$PROJECT_DIR$/platforms/android/build/generated/source/r/F0/F01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platforms/android/build/intermediates/manifests/full/F0/debug/debug.iml" filepath="$PROJECT_DIR$/platforms/android/build/intermediates/manifests/full/F0/debug/debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platforms/android/src/main/main.iml" filepath="$PROJECT_DIR$/platforms/android/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platforms/android/build/intermediates/exploded-aar/Groceries/runtime/unspecified/unspecified.iml" filepath="$PROJECT_DIR$/platforms/android/build/intermediates/exploded-aar/Groceries/runtime/unspecified/unspecified.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platforms/android/build/intermediates/exploded-aar/widgets-release/widgets-release.iml" filepath="$PROJECT_DIR$/platforms/android/build/intermediates/exploded-aar/widgets-release/widgets-release.iml" />
+    </modules>
+  </component>
+</project>

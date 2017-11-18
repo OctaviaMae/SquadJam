@@ -1,0 +1,24 @@
+<Page navigatingTo="onNavigatingTo" xlmns="https://www.nativescript.org/tns.xsd" loaded ="loaded">
+
+    <ActionBar title="PlayList" class="action-bar">
+        <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" tap="onNavBtnTap"/>
+    </ActionBar>
+
+    <StackLayout class="p-20">
+        <SearchBar id="searchBar" hint="Search" text="" clear="onClear" submit="onSubmit" />
+    </StackLayout>
+
+<!--
+    <ListView id="Songs" items="{{ myItems }}">
+        <ListView.itemTemplate>
+            <StackLayout orientation ="horizontal" >
+                <Label text="{{ img }}" textWrap="true" class="title" />
+                <Label text="{{ name }}" textWrap="true" class="title" />
+                <Label id ="artist" text="{{ artist }}" textWrap="true" class="title" />
+                <Label id= "title" text="{{ name }}" textWrap="true" class="title" />
+                <Button id ="like" text = "Like"></Button>
+                <Button id= "dislike" text = "Dislike"></Button>
+            </StackLayout>
+        </ListView.itemTemplate>
+    </ListView>-->
+</Page>

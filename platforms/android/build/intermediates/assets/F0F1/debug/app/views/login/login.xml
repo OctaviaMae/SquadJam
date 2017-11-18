@@ -1,0 +1,16 @@
+<Page navigatingTo="onNavigatingTo" xlmns="https://www.nativescript.org/tns.xsd" actionBarHidden="true">
+
+   <ActionBar title="" class="action-bar"></ActionBar>
+
+    <StackLayout orientation="vertical" id="swipable">
+       <!--<TextField hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
+       <TextField hint="Password" secure="true" />
+        -->
+        <image src ="http://clipart-library.com/img1/967879.png" horizontalAlignment="center" style= "width: 55%; height: 55%" ></image>
+        <Label id = "logo" text= "SquadJam!" font-size="30%" fontAttributes="Bold" forntAttribute ="Italic"></Label>
+        <Label id = "logoBack" text= "SquadJam!" font-size="30.3%" fontAttributes="Bold" forntAttribute ="Italic"></Label>
+        <Button id= "join" text="Join Existing Group " class="link" tap ="joinGroup"/>
+        <Button id= "Create" text= "Create New Squad Playlist" class="link" tap="createGroup"/>
+
+    </StackLayout>
+</Page>

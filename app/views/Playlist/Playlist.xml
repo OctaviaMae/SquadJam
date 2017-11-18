@@ -1,0 +1,34 @@
+<Page navigatingTo="onNavigatingTo" xlmns="https://www.nativescript.org/tns.xsd" loaded ="loaded">
+
+    <ActionBar  class="action-bar">
+        <ActionBar.titleView>
+            <Label id= "title" text = "Playlist"/>
+            <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" tap="onNavBtnTap"/>
+
+            <!--<NavigationButton id = "addButton" android.systemIcon="ic_menu_add" tap="add"/>-->
+        </ActionBar.titleView>
+    </ActionBar>
+
+
+    <ListView id="Songs" items="{{ entries }}">
+            <ListView.itemTemplate>
+                <StackLayout orientation ="horizontal" >
+                    <!--<Label text="{{ img }}" textWrap="true" class="title" />
+                    <Label text="{{ name }}" textWrap="true" class="title" /> -->
+                    <img id= "songImg" text= "{{ img}}"/>
+                    <Label id ="artist" text="{{ artist }}"  class="title" />
+                    <Label id= "title" text="{{ title }}"  class="title" /><!-- textwrap" = "true"-->
+                    <Button id ="like" text = "{{Like}}" tap = "{{onTap}}" class="btn btn-primary btn-active"></Button>
+                  <!--  <Button id= "dislike" text = "Dislike" tap="playlist"></Button>-->
+                    <Image id= "add" src="~/images/ic_add_black_24dp.png" stretch = "none"/>
+                </StackLayout>
+
+
+            </ListView.itemTemplate>
+     </ListView>
+
+</Page>
+
+
+
+

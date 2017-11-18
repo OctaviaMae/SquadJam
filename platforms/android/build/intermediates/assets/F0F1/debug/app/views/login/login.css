@@ -1,0 +1,39 @@
+#logo {
+     font: italic bold 50px;
+     font-weight: 300;
+     color: black;
+     position: relative;
+     text-align: center;
+     margin-top: 20px;
+}
+
+#logoBack{
+font: italic bold 50.4px;
+     font-weight: 300;
+     color: CadetBlue;
+     position: relative;
+     text-align: center;
+     margin-top: -130px;
+
+}
+
+Button {
+    margin: 10;
+    padding: 10;
+    background-color: black;
+
+
+}
+
+#join {
+    color: white;
+    font-size: 18px;
+}
+
+#Create {
+
+     background-color: CadetBlue;
+     color: black;
+     font-size: 18px;
+
+}
