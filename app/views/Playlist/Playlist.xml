@@ -13,14 +13,11 @@
     <ListView id="Songs" items="{{ entries }}">
             <ListView.itemTemplate>
                 <StackLayout orientation ="horizontal" >
-                    <!--<Label text="{{ img }}" textWrap="true" class="title" />
-                    <Label text="{{ name }}" textWrap="true" class="title" /> -->
-                    <img id= "songImg" text= "{{ img}}"/>
-                    <Label id ="artist" text="{{ artist }}"  class="title" />
-                    <Label id= "title" text="{{ title }}"  class="title" /><!-- textwrap" = "true"-->
-                    <Button id ="like" text = "{{Like}}" tap = "{{onTap}}" class="btn btn-primary btn-active"></Button>
-                  <!--  <Button id= "dislike" text = "Dislike" tap="playlist"></Button>-->
-                    <Image id= "add" src="~/images/ic_add_black_24dp.png" stretch = "none"/>
+                    <Image src="{{ img }}" />
+                    <Label text="{{ title }}" textWrap="true" class="title" />
+                    <Label text="{{ artist }}" textWrap="true" class="artist" />
+                    <Button text = "Like" tap="voteForSong({{ id }},{{ playlistID }}, 1)"></Button>
+                    <Button text = "Dislike"  tap="voteForSong({{ id }},{{ playlistID }}, 0)"></Button>
                 </StackLayout>
 
 
