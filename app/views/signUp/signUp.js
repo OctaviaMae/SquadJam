@@ -67,6 +67,7 @@ exports.signIn = function() {
       })
       .then(function(response)
       {
+         global.sessionId = JSON.stringify(response);
          console.log("sessionId: " + JSON.stringify(response));
       }, function(error) {
            console.log(JSON.stringify(error));
