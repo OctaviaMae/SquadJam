@@ -4,22 +4,34 @@ color : CadetBlue;
 background-color: black;
 
 }
+Label{
 
-# artist{
-padding : 20;
+
 }
 
 #title{
-
-padding : 20;
+margin-top:10;
 }
 
-#songImg{
-padding : 20;
+#artist{
+margin-top:30;
+}
+
+#like{
+color: lime;
+
+margin-right: 1;
+}
+
+#unlike{
+
+margin-right: 1;
+color : red;
 
 }
 
-#Like{
+Button{
 
-padding :20;
+background-color : black;
+
 }

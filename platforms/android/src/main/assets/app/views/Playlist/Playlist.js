@@ -28,9 +28,14 @@ exports.loaded = function(args){
 var page = args.object;
 
 //stores the information from the server in a URL
-var url = "http://46cdb31b.ngrok.io/api/search/" + "beyonce";
+exports.onSubmit = function(args){
+var searchBar = args.object;
+var searchValue = searchBar.text.toLowerCase();
+
+var url = "http://81721477.ngrok.io/api/search/" + searchValue;
 
 console.log(url);
+
 
 fetchModule.fetch(url).then(response => {return response.json();}).then(function(r){
       console.log(JSON.stringify(r.entries));

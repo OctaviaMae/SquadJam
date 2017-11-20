@@ -14,6 +14,7 @@ var gestures = require('ui/gestures');
 var listViewModule = require('ui/list-view');
 var Observable = require("data/observable").Observable;
 var ObservableArray = require("data/observable-array").ObservableArray;
+var view = require("ui/core/view");
 
 
 /*
@@ -30,6 +31,8 @@ console.log("we got to the end of the listview element")
 };
 */
 var playlistID = //make HTTP request for ID
+exports.loaded = function(){
+
 
 exports.joinGroup= function(){
 //once password is submitted and valid
@@ -44,10 +47,10 @@ exports.onNavBtnTap = function(){
 
 var backPage = frameModule.topmost().goBack();
 
-}
+};
 
+};
 
-var view = require("ui/core/view");
 
 
 

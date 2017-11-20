@@ -1,4 +1,4 @@
-<Page loaded="loaded" >
+<Page loaded="loaded">
 
     <ActionBar  class="action-bar">
         <ActionBar.titleView>
@@ -14,11 +14,11 @@
 
     	<!--<Image src="http://clipart-library.com/img1/967879.png"  horizontalAlignment="center" />-->
 
-        <TextField id="email" text="{{ email }}" hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
-		<TextField secure="true" text="{{ password }}" hint="Password" />
+        <TextField id= "email" text="{{ email }}" hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
+		<TextField id= "password" secure="true" text="{{ password }}" hint="Password" />
 
         <Button id="signIn" text="Sign in" tap="signIn" />
-        <Button id ="signUp" text="Sign up" class="link" tap="register" />
+        <Button id ="signUp" text="Sign up" class="link" tap="signUp" />
 
     </StackLayout>
 </Page>

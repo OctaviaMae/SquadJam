@@ -3,7 +3,7 @@
     <ActionBar  class="action-bar">
         <ActionBar.titleView>
             <Label id= "title" text = "Playlist"/>
-            <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" tap="onNavBtnTap"/>
+            <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" horizontalAllignment = "right" tap="onNavBtnTap"/>
 
             <!--<NavigationButton id = "addButton" android.systemIcon="ic_menu_add" tap="add"/>-->
         </ActionBar.titleView>
@@ -12,15 +12,19 @@
 
     <ListView id="Songs" items="{{ entries }}">
             <ListView.itemTemplate>
-                <StackLayout orientation ="horizontal" >
-                    <!--<Label text="{{ img }}" textWrap="true" class="title" />
-                    <Label text="{{ name }}" textWrap="true" class="title" /> -->
-                    <img id= "songImg" text= "{{ img}}"/>
-                    <Label id ="artist" text="{{ artist }}"  class="title" />
-                    <Label id= "title" text="{{ title }}"  class="title" /><!-- textwrap" = "true"-->
-                    <Button id ="like" text = "{{Like}}" tap = "{{onTap}}" class="btn btn-primary btn-active"></Button>
-                  <!--  <Button id= "dislike" text = "Dislike" tap="playlist"></Button>-->
-                    <Image id= "add" src="~/images/ic_add_black_24dp.png" stretch = "none"/>
+                <StackLayout orientation = "horizontal">
+                    <Image src="{{ img }}" height = "100" width= "100"  />
+
+                    <StackLayout orientation ="vertical">
+                        <Label text="{{ title }}" textWrap="true" width="60%" height= "20%" id="title" />
+                        <Label text="{{ artist }}" textWrap="true" width="60%" height= "20%" id="artist" />
+                    </StackLayout>
+                    <StackLayout orientation = "vertical">
+                        <Button id="like" text = "Like" tap="voteForSong({{ id }},{{ playlistID }}, 1)"></Button>
+                        <Button id="unlike" text = "Dislike" tap="voteForSong({{ id }},{{ playlistID }}, 0)"></Button>
+                        <Button id="like" text = "Add" tap="voteForSong({{ id }},{{ playlistID }}, 1)"></Button>
+                    </StackLayout>
+
                 </StackLayout>
 
 

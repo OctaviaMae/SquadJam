@@ -23,6 +23,7 @@ var labelModule = require ("ui/label");
 
 var page;
 // allows the "Back" button to go back to the page before it
+
 exports.onNavBtnTap = function(){
 
 var backPage = frameModule.topmost().goBack();
@@ -36,28 +37,27 @@ exports.onSubmit = function(args){
 var searchBar = args.object;
 var searchValue = searchBar.text.toLowerCase();
 
-var url = "http://46cdb31b.ngrok.io/api/search/" + searchValue;
+var url = "http://81721477.ngrok.io/api/search/" + searchValue;
 
 console.log(url);
 
 
 fetchModule.fetch(url).then(response => {return response.json();}).then(function(r){
       console.log(JSON.stringify(r.entries));
-       viewSongs(r)
-       console.log("DONE");
+      page.bindingContext= r;
+      console.log("DONE");
 })
 
 }
 
-function viewSongs(args){
+exports.loaded = function(args){
 
-var songlist = args.object;
-var songListView = page.getViewById("searchResults"); // creates a variable pointing to the llistview
-
-var label = new labelModule.Label();
-label.text = songlist;
-
+var page = args.object;
 }
+
+
+
+
 
 
 
