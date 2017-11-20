@@ -12,6 +12,7 @@
 
     <ListView id="Songs" items="{{ entries }}">
             <ListView.itemTemplate>
+
                 <StackLayout orientation = "horizontal">
                     <Image src="{{ img }}" height = "100" width= "100"  />
 
@@ -24,6 +25,7 @@
                         <Button id="unlike" text = "Dislike" tap="voteForSong({{ id }},{{ playlistID }}, 0)"></Button>
                         <Button id="like" text = "Add" tap="voteForSong({{ id }},{{ playlistID }}, 1)"></Button>
                     </StackLayout>
+
 
                 </StackLayout>
 

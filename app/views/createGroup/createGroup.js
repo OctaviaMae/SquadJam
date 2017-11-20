@@ -1,11 +1,6 @@
 var frameModule = require("ui/frame");
 
 
-exports.loaded = function(){
-console.log("hello");
-};
-
-
 exports.back = function(){
 
 var backPage = frameModule.topmost().goBack();
